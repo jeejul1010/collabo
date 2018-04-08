@@ -393,6 +393,9 @@ function btropg(var x, var y, var h, var s) {
 
 function setup() {
   createCanvas(900, 1000);
+ }
+
+function drae() {
   background(255);
   drawRose(500, 300, 300);
   drawOveractionbabybear(700,500);
