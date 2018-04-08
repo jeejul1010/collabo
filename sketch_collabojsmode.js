@@ -1,7 +1,7 @@
 /*float x: flower center x coordinate
   float y: flower center y coordinate
   float diameter: flower orange circle diameter*/
-function drawRose(var x, var y, var diameter){
+function drawRose(x, y, diameter){
   translate(x, y);
   stroke(42, 116, 32);
   strokeWeight(25);
@@ -43,7 +43,7 @@ function drawRose(var x, var y, var diameter){
   line(x1, y1, x3, y3);
   translate(-x, -y);
 }
-function drawOveractionbabybear(var x, var y)
+function drawOveractionbabybear(x, y)
 {
    strokeWeight(2);
   
@@ -101,7 +101,7 @@ function drawOveractionbabybear(var x, var y)
    triangle(x+4, y+6, x+22, y+6, x+13, y+18);
   
 }
-function drawOlaf(var x,var y, var a, var b){
+function drawOlaf(x, y, a, b){
   //arm
   fill(185,122,87);
   rectMode(CENTER);
@@ -145,7 +145,7 @@ function drawOlaf(var x,var y, var a, var b){
   fill(97,97,97);
   triangle(x-20,y+20,x+20,y,x,y+35);
 }
-function drawCloud(var x,var y,var z,var w,var k)
+function drawCloud(x, y, z, w, k)
 {
   noStroke();
   fill(k);
@@ -153,7 +153,7 @@ function drawCloud(var x,var y,var z,var w,var k)
   ellipse(x-w,y,0.8*z,0.8*z);
   ellipse(x+w,y,0.8*z,0.8*z);
 }
-function drawManbo(var x, var y, var size){ 
+function drawManbo( x,  y,  size){ 
 /* x= x position
    y= y position
    size= size
@@ -233,7 +233,7 @@ ellipse(x,y-size*0.02, size*0.98,size*0.75);
   line(x-size*0.37,y-size*0.4,x-size*0.33,y-size*0.42);
   line(x-size*0.38,y-size*0.43,x-size*0.34,y-size*0.44);
 }
-function drawFrog(var x, var y, var size) {  
+function drawFrog(x, y, size) {  
   noStroke();
 
   /*head*/
@@ -281,7 +281,7 @@ function drawFrog(var x, var y, var size) {
   strokeWeight(size/55);
   arc(x, y-size/3.5, size/3, size/4, 0, PI);
 }
-function drawRabbit(var x, var y, var size, var height) {
+function drawRabbit(x, y, size, height) {
 //face
   stroke(255,200,200);
   fill(255, 200, 200); 
@@ -321,7 +321,7 @@ function drawRabbit(var x, var y, var size, var height) {
   fill(255, 150, 150);
   ellipse(x, y+40, size/8, height/8);
 }
-function btropg(var x, var y, var h, var s) {
+function btropg(x, y, h, s) {
 
   x= x*(1/s);
   y= y*(1/s);
@@ -330,7 +330,7 @@ function btropg(var x, var y, var h, var s) {
   //foot...?
   stroke(0);
   strokeWeight(0.5);
-  fill(#FA9714);
+  fill('#FA9714');
   triangle(x, y, x+10, y+10, x-10, y+10);
   triangle(x, y, x+17, y+5, x+10, y+10);
   triangle(x, y, x-17, y+5, x-10, y+10);
@@ -361,29 +361,29 @@ function btropg(var x, var y, var h, var s) {
   }
 
   //head
-  fill(#E39C40);
+  fill('#E39C40');
   triangle(x, hy, x, hy-10, x-30, hy-20);
-  fill(#FFC271);
+  fill('#FFC271');
   triangle(x, hy, x+30, hy-20, x, hy-10);//buttom
 
-  fill(#F7AD4B);
+  fill('#F7AD4B');
   triangle(x, hy-10, x+30, hy-20, x+20, hy-70);
-  fill(#E3A049);
+  fill('#E3A049');
   triangle(x, hy-10, x-30, hy-20, x-20, hy-70);
-  fill(#FF9E1F);
+  fill('#FF9E1F');
   triangle(x, hy-10, x-20, hy-70, x+20, hy-70);//middle middle
-  fill(#E39C40);
+  fill('#E39C40');
   triangle(x-30, hy-20, x-30, hy-75, x-20, hy-70);
-  fill(#FFC271);
+  fill('#FFC271');
   triangle(x+30, hy-20, x+30, hy-75, x+20, hy-70);//side middle
 
-  fill(#E39C40);
+  fill('#E39C40');
   triangle(x, hy-95, x-20, hy-70, x+20, hy-70);
   triangle(x, hy-95, x-30, hy-75, x-20, hy-70);
   triangle(x, hy-95, x+30, hy-75, x+20, hy-70);//top
 
 
-  stroke(#FA9714);
+  stroke('#FA9714');
   strokeWeight(2);
   line(x+15, hy, x+30, hy+30);
   line(x+12, hy+5, x+20, hy+40);
@@ -393,9 +393,6 @@ function btropg(var x, var y, var h, var s) {
 
 function setup() {
   createCanvas(900, 1000);
- }
-
-function drae() {
   background(255);
   drawRose(500, 300, 300);
   drawOveractionbabybear(700,500);
